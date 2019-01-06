@@ -69,6 +69,12 @@
                                     <action selector="choosePhotoButtonTapped:" destination="DaZ-Dx-iMD" eventType="touchUpInside" id="Phq-aR-Nic"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jdv-qg-m62">
+                                <rect key="frame" x="16" y="64" width="343" height="343"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tek-Sd-dSI">
                                 <rect key="frame" x="16" y="453" width="88" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -114,6 +120,7 @@
                         <outlet property="choosePhotoButton" destination="vuK-8P-mNL" id="MKJ-Lb-1eO"/>
                         <outlet property="furnitureDescriptionLabel" destination="tek-Sd-dSI" id="nRE-Fy-eUz"/>
                         <outlet property="furnitureTitleLabel" destination="lZi-td-9yR" id="jgd-OG-P1H"/>
+                        <outlet property="selectedImageView" destination="Jdv-qg-m62" id="e7m-h5-eAa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oFK-kL-DPV" userLabel="First Responder" sceneMemberID="firstResponder"/>

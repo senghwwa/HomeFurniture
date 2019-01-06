@@ -8,6 +8,7 @@ class FurnitureDetailViewController: UIViewController, UIImagePickerControllerDe
     @IBOutlet weak var choosePhotoButton: UIButton!
     @IBOutlet weak var furnitureTitleLabel: UILabel!
     @IBOutlet weak var furnitureDescriptionLabel: UILabel!
+    @IBOutlet weak var selectedImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,10 +21,13 @@ class FurnitureDetailViewController: UIViewController, UIImagePickerControllerDe
         if let imageData = furniture.imageData,
             let image = UIImage(data: imageData) {
             choosePhotoButton.setTitle("", for: .normal)
-            choosePhotoButton.setBackgroundImage(image, for: .normal)
+            //choosePhotoButton.setBackgroundImage(image, for: .normal)
+            selectedImageView.image = image
         } else {
             choosePhotoButton.setTitle("Choose Image", for: .normal)
-            choosePhotoButton.setImage(nil, for: .normal)
+            //choosePhotoButton.setImage(nil, for: .normal)
+            selectedImageView.image = nil
+
         }
         
         furnitureTitleLabel.text = furniture.name
